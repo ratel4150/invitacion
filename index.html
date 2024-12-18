@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -14,7 +16,7 @@
             background: linear-gradient(to right, #111, #222);
             color: white;
             margin: 0;
-            padding: 0;
+            padding: 45px;
             height: 100vh;
             display: flex;
             justify-content: center;
@@ -37,24 +39,24 @@
             font-weight: bold;
         }
 
-        .button {
-            padding: 15px 40px;
-            background-color: #f7a1c6;
-            color: white;
-            font-weight: bold;
-            text-transform: uppercase;
-            text-decoration: none;
-            border-radius: 30px;
-            margin-top: 30px;
+        .btn-custom {
             display: inline-block;
-            transition: all 0.4s ease;
-            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 1rem 3rem;
+            text-transform: uppercase;
+            color: white;
+            background: linear-gradient(135deg, #f7a1c6, #e072b3);
+            border: none;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
         }
 
-        .button:hover {
-            background-color: #e072b3;
-            transform: scale(1.05);
-            box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.3);
+        .btn-custom:hover {
+            background: linear-gradient(135deg, #e072b3, #f7a1c6);
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
         }
 
         .card-custom {
@@ -99,8 +101,8 @@
                 padding: 20px;
             }
 
-            .button {
-                padding: 12px 30px;
+            .btn-custom {
+                padding: 0.8rem 2rem;
                 font-size: 1rem;
             }
 
@@ -126,6 +128,12 @@
 
                 <p class="lead">🌍 <span class="highlight">Ubicación:</span> La dirección de nuestra Daan Party es tan especial que hemos decidido mantenerla como un pequeño misterio. Simplemente escanea el código QR que encontrarás al final de esta invitación, y te llevará directamente al lugar donde todo sucederá.</p>
 
+                <div class="qr mt-5">
+                    <a data-flickr-embed="true" href="https://www.flickr.com/photos/202004486@N04/54213411705/in/dateposted-public/" title="Código QR">
+                        <img src="https://live.staticflickr.com/65535/54213411705_5bae95bb84_w.jpg" alt="Código QR">
+                    </a>
+                </div>
+
                 <p class="lead">🎶 ¿Qué te espera?</p>
                 <ul class="list-unstyled text-light">
                     <li>Música en vivo 🎤</li>
@@ -138,12 +146,8 @@
                 <p class="lead">¡Estamos ansiosos por celebrar contigo! 🎊</p>
             </div>
 
-            <a href="https://vivetix.com/es/entradas-daan-party-q1ag?s=link" class="button" target="_blank">Confirmar Asistencia</a>
-
-            <div class="qr mt-5">
-                <a data-flickr-embed="true" href="https://www.flickr.com/photos/202004486@N04/54213411705/in/dateposted-public/" title="Captura de pantalla 2024-12-18 122741-modified">
-                    <img src="https://live.staticflickr.com/65535/54213411705_5bae95bb84_w.jpg" alt="Código QR">
-                </a>
+            <div class="d-flex justify-content-center">
+                <a href="https://vivetix.com/es/entradas-daan-party-q1ag?s=link" class="btn btn-custom" target="_blank">Confirmar Asistencia</a>
             </div>
         </div>
 
@@ -157,4 +161,3 @@
 </body>
 
 </html>
-
