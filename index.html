@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>¡Invitación Exclusiva a Daan Party!</title>
+    <!-- Link a Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJX+5IZ6L1jXyzbzWz5eN8w2cY1YX+gFos4Vn9eQ+5dE+FJGpjs+g55roT4n" crossorigin="anonymous">
     <style>
         body {
             font-family: 'Fantasy', cursive;
@@ -13,16 +15,10 @@
             color: white;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
         }
 
         h1 {
             font-size: 3rem;
-            text-align: center;
             color: #f7a1c6;
             margin-bottom: 20px;
         }
@@ -56,11 +52,6 @@
             background-color: #e072b3;
         }
 
-        .qr {
-            margin-top: 30px;
-            text-align: center;
-        }
-
         .qr img {
             border-radius: 15px;
             width: 200px;
@@ -76,8 +67,7 @@
 </head>
 
 <body>
-
-    <div class="invitation">
+    <div class="container text-center">
         <h1>🎉 ¡Estás invitado a la exclusiva Daan Party! 🎉</h1>
 
         <p>✨ <span class="highlight">Fecha:</span> Jueves, 28 de diciembre de 2024</p>
@@ -89,7 +79,7 @@
         <p>🌍 <span class="highlight">Ubicación:</span> La dirección de nuestra Daan Party es tan especial que hemos decidido mantenerla como un pequeño misterio. Simplemente escanea el código QR que encontrarás al final de esta invitación, y te llevará directamente al lugar donde todo sucederá.</p>
 
         <p>🎶 ¿Qué te espera?</p>
-        <ul>
+        <ul class="list-unstyled text-light">
             <li>Música en vivo 🎤</li>
             <li>Zona de fotos para capturar tus mejores momentos 📸</li>
             <li>Actividades especiales y ¡muchas sorpresas más! 🎉</li>
@@ -99,20 +89,22 @@
 
         <p>¡Estamos ansiosos por celebrar contigo! 🎊</p>
 
-        <p>🔗 <a href="https://vivetix.com/es/entradas-daan-party-q1ag?s=link" class="button" target="_blank">Confirmar Asistencia</a></p>
+        <p><a href="https://vivetix.com/es/entradas-daan-party-q1ag?s=link" class="button" target="_blank">Confirmar Asistencia</a></p>
 
-        <div class="qr">
+        <div class="qr mt-4">
             <a data-flickr-embed="true" href="https://www.flickr.com/photos/202004486@N04/54213411705/in/dateposted-public/" title="Captura de pantalla 2024-12-18 122741-modified">
-                <img src="https://live.staticflickr.com/65535/54213411705_5bae95bb84_w.jpg" width="200" height="200" alt="Código QR">
+                <img src="https://live.staticflickr.com/65535/54213411705_5bae95bb84_w.jpg" alt="Código QR">
             </a>
-            <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
         </div>
 
-        <div class="footer">
+        <div class="footer mt-4">
             <p>¡No faltes, nos vemos en la fiesta del año!</p>
         </div>
     </div>
 
+    <!-- Script de Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-kaK9qV0wvE8qvlfzgtlP38c11ZnCTZ1Kdy3zM9TgDT01leWqJwRZROaKJ2bxke6ii" crossorigin="anonymous"></script>
 </body>
 
 </html>
+
